@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Yoni PIA | Accueil</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../imgs/Frame 2.png" alt=""></a>
+        <h1>YONI PIA</h1>
+    </header>
+    <div class="div-moon">
+        <img src="../imgs/Frame 1.png" alt="MOON" class="moon"> 
+    </div>
+    <div class="mid">
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="content">
+            <img src="../imgs/Frame 3.png" alt="" class="logo">
+            <div class="button">
+                <a href="cv.html">ACCEDER AU CV ⟶</a>
+                <a href="lettre.html">ACCEDER A LA LETTRE DE MOTIVATION ⟶</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="link">
+            <a href="https://github.com/YoyoP974/Lettre-de-motivation-Stage.git"><i class='bx bxl-github'></i></a>
+            <a href="#" id="copyLink"><i class='bx bxl-gmail'></i></a>
+        </div>
+        <hr>
+    </div>
+    <script>
+        document.getElementById('copyLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du lien
+        const texteACopier = 'yoni.pia54@gmail.com';
+        
+        // Utilisation de l'API Clipboard pour copier le texte
+        navigator.clipboard.writeText(texteACopier).then(function() {
+            alert("L'adresse mail a été copié dans le presse-papiers !");
+        }).catch(function(err) {
+            console.error('Échec de la copie : ', err);
+        });
+        });
+    </script>
+</body>
+</html>
