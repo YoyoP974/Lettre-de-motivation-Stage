@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lalezar, sans-serif;
+}
+
+body {
+    background: url(../imgs/bg.png) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+header img {
+    width: 60px;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.div-moon {
+    width: 100%;
+    position: absolute;
+    top: -30vh;
+}
+
+.moon {
+    user-select: none;
+    display: block;
+    width: 50%;
+    margin: 0 auto 0;
+}
+
+.mid {
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.mid hr {
+    width: 5px;
+    height: 60vh;
+    background: white;
+    border-radius: 99px;
+    margin-left: 25px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    height: 400px;
+}
+
+.button {
+    display: block;
+    /* position: fixed;
+    right: 30px; */
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+.button a:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 0 30px;    
+}
+
+.link {
+    font-size: 30px;
+    color: white;
+    display: block;
+    position: fixed;
+    left: 42px;
+}
+
+.link a {
+    display: block;
+    color: white;
+}
+
+.bottom hr {
+    height: 5px;
+    width: 70%;
+    background: white;
+    border-radius: 99px;
+}
